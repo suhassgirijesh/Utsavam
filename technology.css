@@ -2,6 +2,13 @@
 TECHNOLOGY
 =========================*/
 
+.technology-hero {
+    background:#faf8f3;
+    margin:0;
+    overflow:hidden;
+    padding:0;
+}
+
 .hero-image {
     display: block;
     width: 100%;
@@ -80,6 +87,7 @@ TECHNOLOGY
 .tech-content{
 
     flex:1;
+    min-width:0;
 }
 
 .tag{
@@ -163,6 +171,7 @@ TECHNOLOGY
 
     font-size:20px;
     font-weight:bold;
+    flex:0 0 auto;
 }
 
 .feature h4{
@@ -203,6 +212,8 @@ flex-direction:column;
 
 text-align:center;
 
+gap:60px;
+
 }
 
 .feature-grid{
@@ -214,6 +225,62 @@ grid-template-columns:1fr;
 .tech-content h2{
 
 font-size:42px;
+
+}
+
+.tech-content p{
+
+font-size:16px;
+
+}
+
+}
+
+@media(max-width:560px){
+
+.hero-image{
+
+height:68vh;
+min-height:420px;
+
+}
+
+.technology{
+
+padding:80px 6%;
+
+}
+
+.tech-image img{
+
+width:300px;
+
+}
+
+.circle1{
+
+width:300px;
+height:300px;
+
+}
+
+.circle2{
+
+width:220px;
+height:220px;
+
+}
+
+.tech-content h2{
+
+font-size:34px;
+
+}
+
+.feature{
+
+padding:20px;
+text-align:left;
 
 }
 
@@ -323,6 +390,11 @@ Technology Highlights
     transition:.4s;
 }
 
+.tech-icon i{
+
+    line-height:1;
+}
+
 .tech-card:hover .tech-icon{
 
     transform:rotate(10deg) scale(1.08);
@@ -406,6 +478,25 @@ grid-template-columns:1fr;
 
 }
 
+@media(max-width:560px){
+
+.tech-highlights h2,
+.why-title h2,
+.erp-header h2{
+
+font-size:32px;
+
+}
+
+.tech-card,
+.feature-card{
+
+padding:30px 22px;
+
+}
+
+}
+
 .section-desc{
 
 font-size:16px;
@@ -430,45 +521,51 @@ font-size:16px;
 WHY UTSAVAM APP
 ==========================*/
 
+/*==================================
+WHY UTSAVAM APP
+==================================*/
+
 .why-app{
 
-    padding:120px 8%;
+    padding:100px 8%;
     background:#F8F7F2;
+
 }
 
 .feature-grid2{
 
-    display:grid;
+    max-width:1400px;
+    margin:auto;
 
+    display:grid;
     grid-template-columns:repeat(4,1fr);
 
     gap:30px;
 
-    max-width:1400px;
-
-    margin:auto;
 }
 
 .feature-card{
 
     background:#fff;
 
-    padding:35px 25px;
+    padding:40px 30px;
 
-    border-radius:20px;
+    border-radius:24px;
 
     text-align:center;
 
-    box-shadow:0 12px 35px rgba(0,0,0,.08);
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
 
     transition:.35s;
+
 }
 
 .feature-card:hover{
 
     transform:translateY(-10px);
 
-    box-shadow:0 25px 50px rgba(0,0,0,.15);
+    box-shadow:0 25px 55px rgba(0,0,0,.15);
+
 }
 
 .feature-icon{
@@ -476,7 +573,7 @@ WHY UTSAVAM APP
     width:80px;
     height:80px;
 
-    margin:auto;
+    margin:auto auto 25px;
 
     border-radius:50%;
 
@@ -488,11 +585,10 @@ WHY UTSAVAM APP
     justify-content:center;
     align-items:center;
 
-    font-size:34px;
+    font-size:32px;
 
-    margin-bottom:20px;
+    transition:.35s;
 
-    transition:.3s;
 }
 
 .feature-card:hover .feature-icon{
@@ -501,41 +597,52 @@ WHY UTSAVAM APP
 
     color:#fff;
 
-    transform:rotate(10deg) scale(1.1);
+    transform:rotate(8deg) scale(1.08);
+
 }
 
 .feature-card h3{
 
     font-size:22px;
 
+    color:#12372A;
+
     margin-bottom:15px;
 
-    color:#12372A;
+    line-height:1.4;
+
 }
 
 .feature-card p{
 
     color:#666;
 
+    font-size:15px;
+
     line-height:1.8;
 
-    font-size:15px;
 }
 
 .why-title{
 
+    max-width:800px;
+
+    margin:0 auto 70px;
+
     text-align:center;
 
-    margin-bottom:60px;
 }
 
 .why-title h2{
 
-    font-size:50px;
+    font-size:52px;
 
     color:#12372A;
 
-    margin-bottom:15px;
+    margin-bottom:18px;
+
+    line-height:1.2;
+
 }
 
 .why-title p{
@@ -543,23 +650,215 @@ WHY UTSAVAM APP
     color:#666;
 
     font-size:18px;
+
+    line-height:1.8;
+
 }
 
-@media(max-width:1100px){
+/*==============================
+Large Laptop
+==============================*/
+
+@media (max-width:1200px){
 
 .feature-grid2{
 
 grid-template-columns:repeat(2,1fr);
 
-}
+gap:25px;
 
 }
 
-@media(max-width:768px){
+.feature-card{
+
+padding:35px 25px;
+
+}
+
+.why-title h2{
+
+font-size:44px;
+
+}
+
+}
+
+/*==============================
+Tablet
+==============================*/
+
+@media (max-width:992px){
+
+.why-app{
+
+padding:80px 6%;
+
+}
+
+.feature-grid2{
+
+grid-template-columns:repeat(2,1fr);
+
+gap:20px;
+
+}
+
+.feature-icon{
+
+width:70px;
+height:70px;
+
+font-size:28px;
+
+}
+
+.feature-card h3{
+
+font-size:20px;
+
+}
+
+.feature-card p{
+
+font-size:14px;
+
+}
+
+.why-title{
+
+margin-bottom:50px;
+
+}
+
+.why-title h2{
+
+font-size:38px;
+
+}
+
+.why-title p{
+
+font-size:16px;
+
+}
+
+}
+
+/*==============================
+Mobile
+==============================*/
+
+@media (max-width:768px){
+
+.why-app{
+
+padding:70px 20px;
+
+}
 
 .feature-grid2{
 
 grid-template-columns:1fr;
+
+gap:20px;
+
+}
+
+.feature-card{
+
+padding:30px 22px;
+
+}
+
+.feature-icon{
+
+width:65px;
+height:65px;
+
+font-size:26px;
+
+margin-bottom:18px;
+
+}
+
+.feature-card h3{
+
+font-size:19px;
+
+}
+
+.feature-card p{
+
+font-size:14px;
+
+line-height:1.7;
+
+}
+
+.why-title{
+
+margin-bottom:40px;
+
+}
+
+.why-title h2{
+
+font-size:30px;
+
+}
+
+.why-title p{
+
+font-size:15px;
+
+}
+
+}
+
+/*==============================
+Small Mobile
+==============================*/
+
+@media (max-width:480px){
+
+.why-app{
+
+padding:60px 16px;
+
+}
+
+.feature-card{
+
+padding:25px 18px;
+
+border-radius:18px;
+
+}
+
+.feature-icon{
+
+width:60px;
+height:60px;
+
+font-size:24px;
+
+}
+
+.feature-card h3{
+
+font-size:18px;
+
+}
+
+.feature-card p{
+
+font-size:13px;
+
+}
+
+.why-title h2{
+
+font-size:26px;
 
 }
 
