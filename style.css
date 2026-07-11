@@ -2804,7 +2804,7 @@ strong {
   .nav-inner {
     display: grid;
     grid-template-columns: auto auto;
-    min-height: 112px;
+    min-height: 148px;
     row-gap: 8px;
   }
 
@@ -2820,10 +2820,12 @@ strong {
   .mobile-nav-links {
     border-top: 1px solid rgba(13, 75, 47, 0.18);
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
     grid-column: 1 / -1;
-    overflow-x: auto;
-    padding: 9px 2px 2px;
+    justify-content: center;
+    overflow: visible;
+    padding: 9px 2px 4px;
     scrollbar-width: none;
   }
 
