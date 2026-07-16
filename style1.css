@@ -2341,11 +2341,11 @@ cite span {
 .reference-hero h1 {
   color: #FFFFFF;
   font-family: "Montserrat", sans-serif;
-  font-size: clamp(3rem, 5.3vw, 5rem);
+  font-size: clamp(2.8rem, 4.6vw, 4.4rem);
   font-weight: 800;
   letter-spacing: 0;
   line-height: 0.98;
-  max-width: 460px;
+  max-width: 560px;
 }
 
 .reference-hero h1 span {
@@ -2355,6 +2355,7 @@ cite span {
   font-size: 1em;
   font-weight: 800;
   line-height: 0.98;
+  white-space: nowrap;
 }
 
 .gold-line {
@@ -2747,8 +2748,8 @@ strong {
   }
 
   .reference-hero h1 {
-    font-size: clamp(5rem, 5.4vw, 7rem);
-    max-width: 620px;
+    font-size: clamp(4rem, 4.4vw, 5.4rem);
+    max-width: 700px;
   }
 
   .reference-hero .hero-copy {
@@ -2907,7 +2908,7 @@ strong {
   }
 
   .reference-hero h1 {
-    font-size: clamp(2.85rem, 13vw, 5rem);
+    font-size: clamp(2.65rem, 12vw, 4.2rem);
     max-width: 100%;
   }
 
