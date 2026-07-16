@@ -2339,6 +2339,18 @@ cite span {
   line-height: 1.7;
   margin: 0 0 26px;
   max-width: 430px;
+  text-align: justify;
+  text-align-last: left;
+}
+
+.reference-hero .hero-copy span {
+  display: block;
+}
+
+.reference-hero .hero-copy-lead {
+  color: #FFFFFF;
+  font-weight: 800;
+  margin-bottom: 8px;
 }
 
 .reference-hero .hero-actions {
@@ -2871,6 +2883,10 @@ strong {
 
   .reference-hero .hero-copy br {
     display: none;
+  }
+
+  .reference-hero .hero-copy {
+    text-align: left;
   }
 
   .reference-hero .hero-actions {
